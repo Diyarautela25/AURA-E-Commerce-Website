@@ -1,0 +1,633 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA STORE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+
+   <h1 class="logo">AURA</h1>
+
+   <input type="text" id="search" placeholder="Search products...">
+
+   <ul class="nav-links">
+   
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">New</a></li>
+      <a href="about.html">About</a>
+   </ul>
+
+<a href="cart.html" class="cart-icon">
+🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+   <div class="wishlist-icon">
+   ❤️ Wishlist (<span id="wish-count">0</span>)
+</div>
+
+    <button id="login-btn">Login</button>
+
+    <p id="user-name"></p>
+    <button id="logout-btn">Logout</button>
+
+</nav>
+</header>
+
+<!-- LOGIN POPUP -->
+
+<div class="login-popup" id="login-popup">
+
+   <div class="login-box">
+
+      <span id="close-login">&times;</span>
+
+      <h2>Login</h2>
+
+      <input type="email" id="login-email" placeholder="Enter Email">
+      <input type="password" id="login-password" placeholder="Enter Password">
+      <button class="login-submit" id="login-submit">Login</button>
+
+      <p>Don't have account? <span id="show-signup">Signup</span></p>
+
+   </div>
+
+</div>
+
+<!-- SIGNUP POPUP -->
+
+<div class="signup-popup" id="signup-popup">
+
+   <div class="signup-box">
+
+      <span id="close-signup">&times;</span>
+
+      <h2>Signup</h2>
+
+      <input type="text" id="signup-name" placeholder="Enter Name">
+      <input type="email" id="signup-email" placeholder="Enter Email">
+      <input type="password" id="signup-password" placeholder="Create Password">
+      <button class="signup-submit" id="signup-submit">Signup</button>
+
+   </div>
+
+</div>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>Soft Gen-Z Fashion</h2>
+        <p>Minimal. Trendy. Aesthetic.</p>
+        <button>Shop Now</button>
+    </div>
+</section>
+
+
+<!-- Categories -->
+<section class="categories">
+    <h2>Shop Categories</h2>
+    <div class="cat-box">
+
+   <!-- HOODIES -->
+
+   <a href="hoodies.html" class="cat">
+
+      <img src="https://i.pinimg.com/1200x/95/28/27/952827ba69c90c2ad641f077d0609ddf.jpg">
+
+      <h3>Hoodies</h3>
+
+   </a>
+
+
+   <!-- SHOES -->
+
+   <a href="shoes.html" class="cat">
+
+      <img src="https://i.pinimg.com/1200x/5b/61/97/5b61976c485c44ce0385cec0ff2d4ba1.jpg">
+
+      <h3>Shoes</h3>
+
+   </a>
+
+
+   <!-- ACCESSORIES -->
+
+   <a href="accessories.html" class="cat">
+
+      <img src="https://i.pinimg.com/1200x/e4/7f/ca/e47fcab4bfc8ad1d114c9bfcf43ebb0e.jpg">
+
+      <h3>Accessories</h3>
+
+   </a>
+
+
+   <!-- STREETWEAR -->
+
+   <a href="streetwear.html" class="cat">
+
+      <img src="https://i.pinimg.com/736x/df/32/3e/df323e4927de0162e6ec6a22617ce8bf.jpg">
+
+      <h3>Streetwear</h3>
+
+   </a>
+</section>
+
+<!-- Products -->
+<section class="products" id="shop">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/1d/9d/35/1d9d35fdd85fd5b22c875cf649b723b3.jpg">
+            <h3>Oversized Hoodie</h3>
+            <p>₹699</p>
+
+            <p class="product-desc">
+                Soft oversized hoodie with premium cotton fabric.
+                Perfect for cozy streetwear outfits.
+            </p>
+
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/08/5d/25/085d2507c5545a333f78d5a4076253d0.jpg">
+            <h3>Baggy Jeans</h3>
+            <p>₹899</p>
+            <p class="product-desc">
+                Soft oversized hoodie with premium cotton fabric.
+                Perfect for cozy streetwear outfits.
+            </p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div> 
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/1200x/91/3e/5d/913e5d00de8a005af9814910ed449d59.jpg">
+            <h3>Floral Top</h3>
+            <p>₹399</p>
+
+            <p class="product-desc">
+                Soft oversized hoodie with premium cotton fabric.
+                Perfect for cozy streetwear outfits.
+            </p>
+            <p class="product-desc">
+                Soft oversized hoodie with premium cotton fabric.
+                Perfect for cozy streetwear outfits.
+            </p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/b3/81/5a/b3815af2bf1995b822bc22d6fcbfd426.jpg">
+            <h3>Casual Shirt</h3>
+            <p>₹450</p>
+
+            <p class="product-desc">
+                Soft oversized hoodie with premium cotton fabric.
+                Perfect for cozy streetwear outfits.
+            </p>
+
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/4f/bb/40/4fbb408bebd3dae07eebf62e6afe8e43.jpg">
+            <h3>Co-ord Set</h3>
+            <p>₹799</p>
+
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/1200x/3d/03/70/3d0370e1c8e341b591d5877943700c89.jpg">
+            <h3>Striped Shirt</h3>
+            <p>₹550</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+            <div class="card product">
+            <img src="https://i.pinimg.com/736x/0d/f1/9c/0df19c59aeaaf11af5442b4cd338ec46.jpg">
+            <h3>Shoulder Bag</h3>
+            <p>₹869</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/78/6b/c4/786bc4fffcbff2fdd74b52cfcecdf598.jpg">
+            <h3>Casual Sneakers</h3>
+            <p>₹1399</p><p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/0e/1b/6c/0e1b6c1d7b956a703a945a70df0830c5.jpg">
+            <h3>Trendy Crocs</h3>
+            <p>₹370</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/bc/2c/41/bc2c41c111a9ab8b8ce40539d4872289.jpg">
+            <h3>Timex Men Watch</h3>
+            <p>₹1800</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/1200x/1e/30/ae/1e30ae90cfbede32b6de26e52dc30e9a.jpg">
+            <h3>Silver chain</h3>
+            <p>₹349</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/24/dd/e8/24dde81cdb5ad900ce52c0ee838d6f93.jpg">
+            <h3>Flower Claw Clips</h3>
+            <p>₹376</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/1200x/a9/c8/5f/a9c85fea6da4512692ae9916c215c640.jpg">
+            <h3> Men's Oxfords Shoes</h3>
+            <p>₹3450</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+           <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/42/1e/ff/421eff7ae9a0a5d48f1d222c20bf281e.jpg">
+            <h3>Printed Bomber Jacket</h3>
+            <p>₹1600</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/0d/a7/e7/0da7e79660d3b15565809a42b97a2f00.jpg">
+            <h3>Men Cargo Jeans</h3>
+            <p>₹1399</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+            </div>
+
+        <div class="card product">
+           <img src="https://i.pinimg.com/1200x/77/cb/c8/77cbc8100d8aa744c53bb3ecfc116b9e.jpg">
+           <h3>Korean Trouser</h3>
+           <p>₹799</p>
+           <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+           <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+           <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+           <img src="https://i.pinimg.com/736x/23/cd/b5/23cdb52aa9c42c8e126d40714b772c4f.jpg">
+           <h3>Brown Raglan T-Shirt</h3>
+           <p>₹650</p>
+           <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+          <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+           <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/1200x/86/27/4d/86274df95b7c31d3e3323733acd3b4c1.jpg">
+            <h3>Rim Glasses</h3>
+            <p>₹429</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/39/b0/2d/39b02d94089cdd4f2500f53177ee5448.jpg">
+            <h3>Hand Bag</h3>
+            <p>₹699</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+        <div class="card product">
+            <img src="https://i.pinimg.com/736x/c9/e3/81/c9e3818ef61197580db818233c4f137d.jpg">
+            <h3>Street Tee</h3>
+            <p>₹599</p>
+            <p class="product-desc">
+Soft oversized hoodie with premium cotton fabric.
+Perfect for cozy streetwear outfits.
+</p>
+            <div class="btns">
+
+   <button class="cart-btn">Add to Cart</button>
+
+   <button class="wish-btn">♡</button>
+
+</div>
+            <button class="view-btn">View Details</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="products">
+
+   <h2>Trending Products (API)</h2>
+
+   <div id="api-products" class="product-grid">
+
+   </div>
+
+</section>
+
+<!-- PRODUCT POPUP -->
+
+<div class="product-popup" id="product-popup">
+
+   <div class="popup-box">
+
+      <span id="close-popup">&times;</span>
+
+      <img id="popup-img" src="">
+
+      <h2 id="popup-title"></h2>
+
+      <p id="popup-price"></p>
+
+      <p class="popup-desc">
+         Trendy aesthetic Gen-Z fashion product ✨
+      </p>
+
+   </div>
+
+</div>
+
+<!-- New Arrival -->
+<section class="arrival" id="new">
+
+   <h2>New Arrival ✨</h2>
+
+   <p>Fresh styles just dropped</p>
+
+   <div class="countdown">
+
+   <div class="time-box">
+      <span id="days">00</span>
+      <p>Days</p>
+   </div>
+
+   <div class="time-box">
+      <span id="hours">00</span>
+      <p>Hours</p>
+   </div>
+
+   <div class="time-box">
+      <span id="minutes">00</span>
+      <p>Minutes</p>
+   </div>
+
+   <div class="time-box">
+      <span id="seconds">00</span>
+      <p>Seconds</p>
+   </div>
+
+</div>
+
+   <div class="arrival-container">
+
+      <div class="arrival-card">
+
+         <img src="https://i.pinimg.com/736x/71/7f/f7/717ff7201a495bef8d9b3322515fbd51.jpg">
+
+         <h3>Korean Oversized Tee</h3>
+
+         <span>NEW</span>
+
+      </div>
+
+      <div class="arrival-card">
+
+         <img src="https://i.pinimg.com/1200x/69/34/e4/6934e4a59ddf80eda3a68ac9bed3c076.jpg">
+
+         <h3>Streetwear Jacket</h3>
+
+         <span>TRENDING</span>
+
+      </div>
+
+      <div class="arrival-card">
+
+         <img src="https://i.pinimg.com/1200x/67/ab/4c/67ab4c6dc008200f5715aaa0a1550a38.jpg">
+
+         <h3>Aesthetic Sneakers</h3>
+
+         <span>HOT</span>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We create aesthetic fashion for modern Gen-Z vibes.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 AURA STORE</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
